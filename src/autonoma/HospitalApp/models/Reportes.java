@@ -9,8 +9,19 @@ package autonoma.HospitalApp.models;
  * @author MAYERLLI
  */
 public class Reportes {
-    public void generarReporteNomina() {}
-    public void generarReportePacientes() {}
-    public void generarReporteInventario() {}
-    public void generarReporteVentas() {}
+
+    public void generarReporteNomina() {
+    }
+
+    public void generarReportePacientes() {
+    }
+
+    public Reportes() {
+    }
+
+    public void generarReporteInventario() {
+    }
+
+    public void generarReporteVentas() {
+    }
 }

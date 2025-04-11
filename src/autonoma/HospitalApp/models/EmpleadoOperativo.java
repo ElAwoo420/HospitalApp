@@ -9,11 +9,25 @@ package autonoma.HospitalApp.models;
  * @author MAYERLLI
  */
 public class EmpleadoOperativo extends Empleado {
+
     private String area;
+
+    public EmpleadoOperativo(String nombre, String documento, int edad, double salarioBase, String area) {
+        super(nombre, salarioBase, edad);
+        this.area = area;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
 
     @Override
     public double calcularSalario() {
-        return salarioBase + (salarioBase * 0.2);
+        return getSalarioBase() + (getSalarioBase() * 0.2); // Usa getter del padre
     }
 }
 

@@ -14,6 +14,27 @@ public class Venta {
      private String id;
     private double valorTotal;
 
+    public Venta(String id, double valorTotal) {
+        this.id = id;
+        this.valorTotal = valorTotal;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
     public void realizarVenta(List<Medicina> medicamentos) {}
     
 }
